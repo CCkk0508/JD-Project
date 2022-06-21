@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+  <!--头部-->
+  <header>
+    <img src="https://misc.360buyimg.com/lib/img/e/logo-201305-b.png">
+    <p class="top">欢迎登录</p>
+    <div class="tip">
+      <img src="img/tip.png">
+      <p>
+        依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版
+        <a href="#"> 《京东隐私政策》</a>
+        已上线，将更有利于保护您的个人隐私。
+      </p>
+    </div>
+  </header>
+  <!--主体-->
+  <section>
+    <div>
+      <div class="body">
+        <form action="LoginServlet" method="post">
+          <div class="tip">
+            <img src="img/tip.png">
+            <p>
+              京东不会以任何理由要求您转账汇款，谨防诈骗。
+            </p>
+          </div>
+          <div class="button">
+            <a href="#" class="left">扫码登录</a>
+            <a href="#" class="right">账号登陆</a>
+          </div>
+          <div class="center">
+            <div class="one">
+              <span></span>
+              <input  class="active" type="text" placeholder="邮箱/用户名/登录手机" name="username" autocomplete="off">
+              <i class="delete"></i>
+            </div>
+            <div class="two">
+              <span></span>
+              <input  class="active" type="password" placeholder="密码" name="password">
+              <i class="delete"></i>
+            </div>
+            <a href="#">忘记密码</a>
+            <div class="three">
+              <button type="submit">登录</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+  <!--底部-->
+  <footer>
+  </footer>
+</body>
+</html>
