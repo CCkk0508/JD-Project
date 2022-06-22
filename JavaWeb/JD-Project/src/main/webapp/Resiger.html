@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <script type="text/javascript" src="js/resiger.js"></script>
+    <link rel="stylesheet" href="css/resiger.css">
+</head>
+<body>
+    <div class="top">
+        <div class="inner">
+            <div class="left">
+                <img src="img/img_8.png">
+                <span>欢迎注册</span>
+            </div>
+            <div class="right">
+                <span>已有账号？</span>
+                <a href="Login.html">请登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="inner">
+            <form method="post" action="RegisterServlet">
+                <div class="one">
+                    <span>用户名:</span>
+                    <input type="text" name="username" placeholder="请输入用户名">
+                </div>
+                <div class="two">
+                    <span>密 码:</span>
+                    <input type="password" id="password" name="password" placeholder="请输入密码"  onclick="password_tip()" onblur="checkPassword()" >
+                </div>
+                <div id="password_tip">8-16个字符，需包含大、小写字母和数字</div>
+                <div class="three">
+                    <span>手机号:</span>
+                    <input type="text" id="phone" name="phone" placeholder="请输入手机号"  onclick="phone_tip()" onblur="checkPhone()">
+                </div>
+                <div id="phone_tip">可通过该手机号找回密码</div>
+                <div class="four">
+                    <span>邮 箱:</span>
+                    <input type="text" id="email" name="email" placeholder="请输入邮箱" onclick="email_tip()" onblur="checkEmail()">
+                </div>
+                <div id="email_tip">6～18个字符，可使用字母、数字、下划线，需要以字母开头</div>
+                <button type="submit" class="button" onsubmit=" return checkAll()">立即注册</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -15,7 +15,6 @@ public class LoginServlet extends HttpServlet {
         response.setCharacterEncoding("GBK");
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        System.out.println(username + password);
         Connection connection = null;
         ResultSet resultSet = null;
         PreparedStatement preparedStatement = null;
